@@ -24,17 +24,3 @@ services:
         depends_on:
             - php
         restart: always
-    mysql:
-        build:
-            context: bin/mysql
-        container_name: ${CONTAINER_NAME}mysql
-        command: --default-authentication-plugin=mysql_native_password
-        ports:
-            - ${PORT_MYSQL}:3306
-        volumes:
-            - ./data/mysql:/var/lib/mysql
-            - ./logs/mysql:/var/log/mysql
-        environment:
-            MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
-            MYSQL_DATABASE: ${MYSQL_DATABASE}
-        restart: always
