@@ -1,0 +1,21 @@
+{
+    "name": "dancarvalhodev/banking-app",
+    "description": "A simple MVP of a banking app",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Dancarvalhodev\\BankingApp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Daniel Carvalho"
+        }
+    ],
+    "require-dev": {
+        "codeception/codeception": "^5.1",
+        "codeception/module-phpbrowser": "*",
+        "codeception/module-asserts": "*"
+    }
+}
